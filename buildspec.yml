@@ -20,7 +20,7 @@ phases:
      - echo pushing in to docker ECR...
      - docker push 488122405204.dkr.ecr.us-east-1.amazonaws.com/ecs-fargate-image:latest
      - echo Writing image definition file..
-     - printf '[{"name":"%s","imageUri":"%s"}]' "ECS-Fargate-Cluster" "488122405204.dkr.ecr.us-east-1.amazonaws.com/ecs-fargate-image" > imagedefinitions.json
+     - printf '[{"name":"%s","imageUri":"%s"}]' "ecs-fargate-cluster" "488122405204.dkr.ecr.us-east-1.amazonaws.com/ecs-fargate-image" > imagedefinitions.json
 
 
 artifacts:
